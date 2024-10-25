@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Article
+from article.models import Article
 
-class ArticleSerialyzer(serializers.ModelSerializer):
+class ArticleSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
 
     class Meta:

@@ -1,3 +1,6 @@
 # Ignorer tous les répertoires __pycache__
 __pycache__/
 *.py[cod]
+
+# Ignorer la base de données
+db.sqlite3
